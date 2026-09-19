@@ -64,7 +64,7 @@ def bfs_graph(graph, start, goal):
 
     while frontier:
 
-        node = frontier.popleft()
+        node = frontier.popleft()#queue implementation
 
         if node.state in explored:
             continue
@@ -106,7 +106,7 @@ def dfs_graph(graph, start, goal):
 
     while frontier:
 
-        node = frontier.pop()
+        node = frontier.pop()#stack implementation
 
         if node.state in explored:
             continue
